@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Agrandir GrandHeavy';
+    src: url('../fonts/Agrandir-GrandHeavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Test Söhne Breit Buch';
+    src: url('../fonts/TestSöhneBreit-Buch.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Test Söhne Breit Halbfett';
+    src: url('../fonts/TestSöhneBreit-Halbfett.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Test Söhne Breit Leicht';
+    src: url('../fonts/TestSöhneBreit-Leicht.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-Agrandir-GrandHeavy {
+    font-family: 'Agrandir GrandHeavy', sans-serif;
+}
+.font-Test-Söhne-Breit-Buch {
+    font-family: 'Test Söhne Breit Buch', sans-serif;
+}
+.font-Test-Söhne-Breit-Halbfett {
+    font-family: 'Test Söhne Breit Halbfett', sans-serif;
+}
+.font-Test-Söhne-Breit-Leicht {
+    font-family: 'Test Söhne Breit Leicht', sans-serif;
+}
+
+#clear-button{
+    border: 2px solid #8C20FF;
+}
+
+
+
+
+
+
+
+
+
+

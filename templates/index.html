@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Sentiment Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class='flex'>
+
+        <!-- White portion -->
+        <div class='w-1/2 h-full px-8 py-8 space-y-24'>
+            <div class='flex items-center gap-2'>
+                <img src='/static/assets/logo.png' alt="" class='w-14 invert' />
+                <h1 class='font-Agrandir-GrandHeavy'>EMOTIVA</h1>
+            </div>
+
+            <div class='pl-10 pr-16'>
+                <p class='font-Test-Söhne-Breit-Leicht text-4xl max-w-[630px] pb-12'>Understand emotions beyond words — real-time multilingual sentiment analysis powered by AI, expressive visual feedback, and smart design to help you decode feelings across languages, tone, and intent.
+                </p>
+                <div class='font-Test-Söhne-Breit-Buch bg-[#DFDFDF] rounded-3xl p-6'>
+                    <textarea id="input-text" rows="4" placeholder="Type Or Paste Your Text Here ..."
+                        class='text-black w-full outline-none placeholder-black resize-none overflow-hidden bg-transparent outline-none focus:outline focus:outline-2 focus:outline-[#8C20FF] py-2 px-4+ rounded-2xl'></textarea>
+                </div>
+                <div class='flex gap-5 pl-2 mt-6'>
+                    <button id="analyze-button"
+                        class='font-Agrandir-GrandHeavy text-white px-7 py-4 rounded-xl bg-[#8C20FF] flex items-center gap-3 transition-transform duration-300 ease-in-out hover:scale-90'>ANALYZE
+                        <img src='/static/assets/star.png' alt="" class='w-8' />
+                    </button>
+                    <button id="clear-button"
+                        class='font-Agrandir-GrandHeavy text-[#8C20FF] px-6 py-4 rounded-xl hover:bg-[#8C20FF] hover:text-white duration-300 ease-in-out'>CLEAR</button>
+                </div>
+
+                <div id="result-section" class='w-full h-[330px] p-5 rounded-3xl mt-12 mb-28'>
+                    <div
+                        class='w-full h-full border border-white rounded-3xl flex flex-col items-center justify-between'>
+                        <div class='flex-1 flex flex-col justify-center items-center'>
+                            <div id="spinner" class="hidden flex justify-center items-center mb-4">
+                                <div
+                                    class="w-12 h-12 border-4 border-black border-t-transparent rounded-full animate-spin">
+                                </div>
+                            </div>
+                            <div id="sentiment-emoji" class="sentiment-emoji mb-4 w-28 h-28 "></div>
+                            <div id="sentiment-label"
+                                class="sentiment-label font-Test-Söhne-Breit-Buch text-5xl text-white"></div>
+                        </div>
+                        <div id="sentiment-score"
+                            class="sentiment-score font-Test-Söhne-Breit-Buch text-sm text-white mb-4"></div>
+                        <div id="language-info"
+                            class="language-info font-Test-Söhne-Breit-Buch text-sm text-white mb-4"></div>
+                    </div>
+                    <div id="error-message"
+                        class="error-message hidden font-Test-Söhne-Breit-Buch text-sm text-white mb-4">
+                        <i class=""></i>
+                        <span id="error-text"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Black portion -->
+        <div class='fixed top-0 right-0 w-1/2 h-full bg-black overflow-hidden'>
+            <video class='absolute top-0 left-0 w-full h-full object-cover z-0' autoPlay loop muted playsInline>
+                <source src='/static/assets/video.mp4' type="video/mp4" />
+            </video>
+            <div class='relative z-10 flex flex-col justify-between h-full'>
+                <div class='font-Test-Söhne-Breit-Buch text-right pt-8 pr-10'>
+                    <p class='text-white pb-2'>DEVELOPED BY</p>
+                    <div class='text-[#787878]'>
+                        <p>Soumyajit Chowdhury</p>
+                        <p>Gourab Saha</p>
+                        <p>Subhrapratim Mukherjee</p>
+                    </div>
+                </div>
+                <div class='pb-2'>
+                    <h1
+                        class='text-[115px] leading-none text-center font-Agrandir-GrandHeavy bg-gradient-to-b from-white to-[#AA5BFF] text-transparent bg-clip-text'>
+                        EMOTION</h1>
+                    <h1 class='pr-7 text-5xl text-right font-Agrandir-GrandHeavy text-white'>DETECTION</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- <script src="/static/js/script.js"></script> -->
+</body>
+
+</html>
