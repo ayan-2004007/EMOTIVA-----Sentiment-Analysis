@@ -7,9 +7,6 @@
     <title>Multilingual Sentiment Analysis</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -25,10 +22,10 @@
             </div>
 
             <div class='pl-10 pr-16'>
-                <p class='font-Test-Söhne-Breit-Leicht text-4xl max-w-[630px] pb-12'>Understand emotions beyond words — real-time multilingual sentiment analysis powered by AI, expressive visual feedback, and smart design to help you decode feelings across languages, tone, and intent.
+                <p class='font-Test-Söhne-Breit-Leicht text-2xl max-w-[550px] pb-12'>Understand emotions beyond words — real-time multilingual sentiment analysis powered by AI, expressive visual feedback, and smart design to help you decode feelings across languages, tone, and intent.
                 </p>
                 <div class='font-Test-Söhne-Breit-Buch bg-[#DFDFDF] rounded-3xl p-6'>
-                    <textarea id="input-text" rows="4" placeholder="Type Or Paste Your Text Here ..."
+                    <textarea id="input-text" rows="3" placeholder="Type Or Paste Your Text Here ..."
                         class='text-black w-full outline-none placeholder-black resize-none overflow-hidden bg-transparent outline-none focus:outline focus:outline-2 focus:outline-[#8C20FF] py-2 px-4+ rounded-2xl'></textarea>
                 </div>
                 <div class='flex gap-5 pl-2 mt-6'>
@@ -74,7 +71,7 @@
                 <source src='/static/assets/video.mp4' type="video/mp4" />
             </video>
             <div class='relative z-10 flex flex-col justify-between h-full'>
-                <div class='font-Test-Söhne-Breit-Buch text-right pt-8 pr-10'>
+                <div class='font-Test-Söhne-Breit-Buch text-sm text-right pt-8 pr-10'>
                     <p class='text-white pb-2'>DEVELOPED BY</p>
                     <div class='text-[#787878]'>
                         <p>Soumyajit Chowdhury</p>
@@ -84,16 +81,15 @@
                 </div>
                 <div class='pb-2'>
                     <h1
-                        class='text-[115px] leading-none text-center font-Agrandir-GrandHeavy bg-gradient-to-b from-white to-[#AA5BFF] text-transparent bg-clip-text'>
+                        class='text-[105px] leading-none text-center font-Agrandir-GrandHeavy bg-gradient-to-b from-white to-[#AA5BFF] text-transparent bg-clip-text'>
                         EMOTION</h1>
-                    <h1 class='pr-7 text-5xl text-right font-Agrandir-GrandHeavy text-white'>DETECTION</h1>
+                    <h1 class='pr-6 text-5xl text-right font-Agrandir-GrandHeavy text-white'>DETECTION</h1>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <!-- <script src="/static/js/script.js"></script> -->
 </body>
 
 </html>
