@@ -28,6 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         analyzeSentiment(text);
+
+        const element = document.getElementById('result-section');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'center'  });
+        }
     });
 
     clearButton.addEventListener('click', function () {
