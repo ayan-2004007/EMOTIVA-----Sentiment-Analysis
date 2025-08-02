@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     analyzeButton.addEventListener('click', function () {
-        const text = inputText.value.trim();
+        const text = inputText.value.trim()
         console.log(text)
         if (!text) {
             showError('Please enter some text to analyze.');
